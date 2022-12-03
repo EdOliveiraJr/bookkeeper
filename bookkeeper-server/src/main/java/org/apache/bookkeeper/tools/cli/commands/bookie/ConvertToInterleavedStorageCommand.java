@@ -56,11 +56,11 @@ public class ConvertToInterleavedStorageCommand extends BookieCommand<ConvertToI
 
     @Setter
     private LedgerIdFormatter ledgerIdFormatter;
-
+    @Before 
     public ConvertToInterleavedStorageCommand() {
         this(new CTISFlags());
     }
-
+    @Before
     public ConvertToInterleavedStorageCommand(CTISFlags flags) {
         super(CliSpec.<CTISFlags>newBuilder().withName(NAME).withDescription(DESC).withFlags(flags).build());
     }

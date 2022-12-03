@@ -45,10 +45,12 @@ public class WhoIsAuditorCommand extends BookieCommand<CliFlags> {
 
     private BookKeeperAdmin bka;
 
+    @Before
     public WhoIsAuditorCommand() {
         this(null);
     }
 
+    @Before
     public WhoIsAuditorCommand(BookKeeperAdmin bka) {
         super(CliSpec.newBuilder()
                      .withName(NAME)

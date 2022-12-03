@@ -46,10 +46,11 @@ public class ConvertToDBStorageCommand extends BookieCommand<ConvertToDBStorageC
 
     @Setter
     private LedgerIdFormatter ledgerIdFormatter;
-
+    @Before
     public ConvertToDBStorageCommand() {
         this(new CTDBFlags());
     }
+    @Before
     public ConvertToDBStorageCommand(CTDBFlags flags) {
         super(CliSpec.<CTDBFlags>newBuilder().withFlags(flags).withName(NAME).withDescription(DESC).build());
     }

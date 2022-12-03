@@ -45,11 +45,11 @@ public class FormatCommand extends BookieCommand<FormatCommand.Flags> {
 
     private static final String NAME = "format";
     private static final String DESC = "Format the current server contents.";
-
+    @Before
     public FormatCommand() {
         this(new Flags());
     }
-
+    @Before
     public FormatCommand(Flags flags) {
         super(CliSpec.<Flags>newBuilder()
             .withName(NAME)

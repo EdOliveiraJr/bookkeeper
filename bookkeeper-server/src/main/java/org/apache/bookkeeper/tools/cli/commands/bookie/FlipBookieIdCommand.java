@@ -49,11 +49,11 @@ public class FlipBookieIdCommand extends BookieCommand<FlipBookieIdCommand.FlipB
 
     private static final String NAME = "flip-bookie-id";
     private static final String DESC = "Update bookie id in ledgers (this may take a long time).";
-
+    @Before 
     public FlipBookieIdCommand() {
         this(new FlipBookieIdFlags());
     }
-
+    @Before
     private FlipBookieIdCommand(FlipBookieIdFlags flags) {
         super(CliSpec.<FlipBookieIdFlags>newBuilder()
                   .withName(NAME)
