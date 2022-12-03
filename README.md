@@ -2,6 +2,18 @@
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.apache.bookkeeper/bookkeeper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.apache.bookkeeper/bookkeeper)
 
+# Trabalho de Qualidade de Software
+===================
+### Universidade Federal do Ceará - Campus de Quixadá  
+Curso: Engenharia de Software  
+Disciplina: Qualiade de Software - 2022.2  
+
+### Refatoração de códigos de teste - Test Smells
+
+Equipe 04: Edvaldo Oliveira, Henrique e Iago
+
+[Diario de Refatoração](./Diario_Terceira_Entrega.pdf)
+
 # Apache BookKeeper
 
 Apache BookKeeper is a scalable, fault tolerant and low latency storage service optimized for append-only workloads.
